@@ -1,0 +1,22 @@
+{
+    "type": "project",
+    "name": "Moriorgames Trade",
+    "description": "Moriorgames Trade",
+    "license": "proprietary",
+    "require": {
+        "php": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": "tests/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "5.0.*"
+    }
+}
