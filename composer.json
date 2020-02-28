@@ -1,6 +1,6 @@
 {
     "type": "project",
-    "name": "Moriorgames Trade",
+    "name": "moriorgames/trade",
     "description": "Moriorgames Trade",
     "license": "proprietary",
     "require": {
