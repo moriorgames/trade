@@ -10,10 +10,10 @@
       Object.entries(data.intraday).forEach(function (element) {
         points.unshift([
           element[0],
+          parseFloat(element[1].low),
           parseFloat(element[1].open),
           parseFloat(element[1].close),
-          parseFloat(element[1].high),
-          parseFloat(element[1].close)
+          parseFloat(element[1].high)
         ])
       })
 
