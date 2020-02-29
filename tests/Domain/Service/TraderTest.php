@@ -1,15 +1,17 @@
 <?php
 
-namespace Tests\Trade\Services;
+namespace Tests\Domain\Service;
 
+use Domain\Repository\StocksRepository;
+use Domain\Service\Trader;
 use PHPUnit\Framework\TestCase;
-use Trade\Services\Trader;
 
 class TraderTest extends TestCase
 {
     public function test_is_able_to_iterate_over_cycles_with_an_strategy_and_extract_effectiveness()
     {
-        $sut = new Trader;
+        $repository = $this->prophesize(StocksRepository::class);
+        $sut = new Trader($repository->reveal());
 
         $effectiveness = $sut->execute();
 
