@@ -2,7 +2,9 @@
 
 namespace Domain\Repository;
 
+use Domain\Entity\StocksCollection;
+
 interface StocksRepository
 {
-    public function getAll(): array;
+    public function getAll(): StocksCollection;
 }

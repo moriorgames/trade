@@ -4,7 +4,9 @@
     "description": "Moriorgames Trade",
     "license": "proprietary",
     "require": {
-        "php": "^7.4"
+        "php": "^7.4",
+        "ext-json": "*",
+        "doctrine/collections": "^1.6"
     },
     "autoload": {
         "psr-4": {
